@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+* {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 }
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
+.MainHomeDiv {
+    height: calc(100vh - 13vh);
+    background-color: rgb(26, 188, 156);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.MainHomeHDiv {
+    font-size: 4rem;
+    line-height: 3.5rem;
+    color: White;
+    font-weight: bold;
 }
-
-.App-link {
-  color: #61dafb;
+.StarSVg {
+    color: White;
+    width: 38px;
+    position: relative;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MainStarAndLinesDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LineBeforeAAfterSstaer {
+    width: 100px;
+    height: 3px;
+    border: 2px solid white;
+    background-color: white;
+}
+.MainStarAndLinesDiv:hover .LineBeforeAAfterSstaer {
+    width: 200px;
+    transition: 2s;
+}
+.MainHomeHDivLast {
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    color: White;
+}
+#Portfolio {
+    height: 300vh;
 }
