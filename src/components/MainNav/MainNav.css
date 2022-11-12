@@ -17,7 +17,7 @@ body {
     align-items: center;
     flex-direction: row;
     z-index: 3;
-    transition:  0.5s padding;
+    transition: padding 1s;
 }
 
 .MainNavbarsec a {

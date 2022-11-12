@@ -18,10 +18,10 @@ function MainNav({section1InView, section2InView }) {
     <Navbar
     style={{
       padding: section1InView
-      ? "3vh"
+      ? "3.5vh"
       : section2InView
-      ? "1vh"
-      : "1vh"
+      ? "1.5vh"
+      : "1.5vh"
      }}
     className="MainNavbarsec " expand="lg"
     >
