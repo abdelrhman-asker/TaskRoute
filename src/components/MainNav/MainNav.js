@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { HashLink } from 'react-router-hash-link';
 // import Home from "./Home"
 import { useInView } from "react-intersection-observer";
+import { AiOutlineMenu } from 'react-icons/ai';
 
 
 function MainNav({section1InView, section2InView }) {
@@ -29,7 +30,11 @@ function MainNav({section1InView, section2InView }) {
         <Navbar.Brand  className='HashLinkMainLogo ms-md-5' >
         <HashLink className="ms-md-5 HashLinkMain" to="/#"> START REACT</HashLink>
         </Navbar.Brand>
-        <Navbar.Toggle  aria-controls="basic-navbar-nav" />
+        <HashLink>
+        <Navbar.Toggle className="ToggleOnfocus"  aria-controls="basic-navbar-nav" >
+          menu<AiOutlineMenu />
+        </Navbar.Toggle>
+        </HashLink>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto ml-0">
 
