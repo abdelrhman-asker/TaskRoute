@@ -7,7 +7,7 @@ body {
     width: 100vw !important;
     background-color: #2c3e50 ;
     /* height: 13vh; */
-    /* padding: 3vh !important; */
+    padding: 3vh ;
     position: sticky !important;
     top: 0 !important;
     right: 0 !important;
@@ -17,7 +17,7 @@ body {
     align-items: center;
     flex-direction: row;
     z-index: 3;
-    transition: 0.5s;
+    transition:  0.5s padding;
 }
 
 .MainNavbarsec a {
