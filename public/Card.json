@@ -1,0 +1,50 @@
+{
+    "cards": [
+        {
+            "id": "1",
+            "title": "First Project",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto facere vero consectetur itaque molestiae perspiciatis porro alias iure exercitationem quibusdam?",
+            "link": "https://modest-ramanujan-f625b4.netlify.app/",
+            "photo": "/images/cabin.png"
+        },
+        {
+            "id": "2",
+            "title": "Second Project",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto facere vero consectetur itaque molestiae perspiciatis porro alias iure exercitationem quibusdam?",
+            "link": "https://modest-ramanujan-f625b4.netlify.app/",
+            "photo": "/images/cake.png"
+        },
+        {
+            "id": "3",
+            "title": "Third Project",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto facere vero consectetur itaque molestiae perspiciatis porro alias iure exercitationem quibusdam?",
+            "link": "https://modest-ramanujan-f625b4.netlify.app/",
+            "photo": "/images/circus.png"
+        },
+        {
+            "id": "4",
+            "title": "Fourth Project",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto facere vero consectetur itaque molestiae perspiciatis porro alias iure exercitationem quibusdam?",
+            "link": "https://modest-ramanujan-f625b4.netlify.app/",
+            "photo": "/images/game.png"
+        },
+        {
+            "id": "5",
+            "title": "Fifth Project",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto facere vero consectetur itaque molestiae perspiciatis porro alias iure exercitationem quibusdam?",
+            "link": "https://modest-ramanujan-f625b4.netlify.app/",
+            "photo": "/images/safe.png"
+        },
+        {
+            "id": "6",
+            "title": "Sixth Project",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto facere vero consectetur itaque molestiae perspiciatis porro alias iure exercitationem quibusdam?",
+            "link": "https://modest-ramanujan-f625b4.netlify.app/",
+            "photo": "/images/submarine.png"
+        }
+        
+    ]
+    
+}
+
+    

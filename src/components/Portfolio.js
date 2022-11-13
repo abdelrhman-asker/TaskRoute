@@ -1,6 +1,15 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import axios from "axios";
 
-const Portfolio = ({section1InView, section2InView }) => {
+const Portfolio = ({section1InViewPlus, section2InViewPlus }) => {
+  const [cards, setCard] = useState([])
+
+  useEffect(() => {
+    axios.get("Card.json")
+    .then((res) => {
+      setCard(res.data.cards)
+    })
+  }, [])
   return (
     <div className='MainDivPortfolio' id='Portfolio'>
       <div>
@@ -11,9 +20,9 @@ const Portfolio = ({section1InView, section2InView }) => {
       <div className='MainStarAndLinesDiv mt-4'>
             <div className='LineBeforeAAfterSstaerPort me-4'
             style={{
-              width: section1InView
-              ? "100px"
-              : section2InView
+              width: section1InViewPlus
+              ? "70px"
+              : section2InViewPlus
               ? "150px"
               : "150px"
              }}
@@ -23,14 +32,27 @@ const Portfolio = ({section1InView, section2InView }) => {
             </div>
             <div className='LineBeforeAAfterSstaerPort ms-4'
              style={{
-              width: section1InView
-              ? "100px"
-              : section2InView
+              width: section1InViewPlus
+              ? "70px"
+              : section2InViewPlus
               ? "150px"
               : "150px"
              }}
             ></div>
         </div>
+             <div>
+             {cards.slice(0, 6).map((cards)=> 
+              <img className='ImgsPortMap' src={cards.photo} />
+             
+             
+             
+             )}
+
+
+
+             </div>
+
+
     </div>
   )
 }

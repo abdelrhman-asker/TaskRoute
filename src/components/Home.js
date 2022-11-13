@@ -40,7 +40,11 @@ const Home = () => {
       /> */}
       
        
-        <MainNav className="MainNAvIntoMainHome" section1InViewPlus={section1InViewPlus} section1InView={section1InView} section2InView={section2InView}   />
+        <MainNav className="MainNAvIntoMainHome"
+         section1InViewPlus={section1InViewPlus}
+         section2InViewPlus={section2InViewPlus}
+          section1InView={section1InView}
+          section2InView={section2InView}   />
          
        
           <div className="Container">
@@ -48,7 +52,10 @@ const Home = () => {
       <HomeMain section1InView={section1InView} section2InView={section2InView} />
       </section>
 <section className="Section" ref={setRefssecond}>
-        <Portfolio ref={section2Ref} /></section>
+        <Portfolio  ref={section2Ref}
+        section1InViewPlus={section1InViewPlus}
+         section2InViewPlus={section2InViewPlus}  />
+         </section>
         <section className="Section">
         section3</section></div>
 
