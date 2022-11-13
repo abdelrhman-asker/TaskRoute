@@ -32,7 +32,7 @@ function MainNav({section1InView, section2InView }) {
         </Navbar.Brand>
         <HashLink>
         <Navbar.Toggle className="ToggleOnfocus"  aria-controls="basic-navbar-nav" >
-          menu<AiOutlineMenu />
+          MENU<AiOutlineMenu />
         </Navbar.Toggle>
         </HashLink>
         <Navbar.Collapse id="basic-navbar-nav">

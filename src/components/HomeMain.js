@@ -15,8 +15,8 @@ const HomeMain = ({section1InView, section2InView}) => {
               width: section1InView
               ? "100px"
               : section2InView
-              ? "200px"
-              : "200px"
+              ? "150px"
+              : "150px"
              }}
             ></div>
             <div >
@@ -27,8 +27,8 @@ const HomeMain = ({section1InView, section2InView}) => {
               width: section1InView
               ? "100px"
               : section2InView
-              ? "200px"
-              : "200px"
+              ? "150px"
+              : "150px"
              }}
             ></div>
         </div>
