@@ -19,7 +19,7 @@ function MainNav({section1InView, section2InView }) {
     <Navbar
     style={{
       padding: section1InView
-      ? "3.5vh"
+      ? "5vh"
       : section2InView
       ? "1.5vh"
       : "1.5vh"

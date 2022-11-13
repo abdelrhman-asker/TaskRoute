@@ -28,12 +28,12 @@ const Home = () => {
       /> */}
       
        
-        <MainNav section1InView={section1InView} section2InView={section2InView}   />
+        <MainNav className="MainNAvIntoMainHome" section1InView={section1InView} section2InView={section2InView}   />
          
        
           <div className="Container">
       <section  className="Section" ref={section1Ref} >
-      <HomeMain />
+      <HomeMain section1InView={section1InView} section2InView={section2InView} />
       </section>
 <section className="Section" ref={section2Ref}>
         <Portfolio ref={section2Ref} /></section>

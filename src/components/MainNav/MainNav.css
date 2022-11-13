@@ -10,8 +10,8 @@ body {
     width: 100vw !important;
     background-color: #2c3e50 ;
     /* height: 13vh; */
-    padding: 3vh ;
-    position: sticky !important;
+    /* padding: 3vh ; */
+    position: fixed !important;
     top: 0 !important;
     right: 0 !important;
     left: 0 !important;
@@ -51,7 +51,7 @@ body {
     display: flex;
     gap: 25px;
     float: left;
-    
+
   }
   .navbar-collapse {
     text-align: left;
@@ -81,6 +81,10 @@ body {
       .MainNavbarsec a {
         font-size: smaller;
     }
+    .MainNavbarsec .ms-auto {
+      margin-bottom: 20px;
+  
+    }
   }
   @media screen and (min-width: 1px ) and (max-width: 768px ) {
     .navbar-expand-lg .navbar-collapse {
@@ -89,5 +93,9 @@ body {
       }
       .MainNavbarsec a {
         font-size: smaller;
+    }
+    .MainNavbarsec .ms-auto {
+      margin-bottom: 20px;
+  
     }
   }

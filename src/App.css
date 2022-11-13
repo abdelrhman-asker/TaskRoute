@@ -23,7 +23,7 @@ body {
     opacity: 1;
 }
 .MainHomeDiv {
-    height: calc(100vh - 13vh);
+    height: calc(100vh - 0vh);
     background-color: rgb(26, 188, 156);
     display: flex;
     justify-content: center;
@@ -47,17 +47,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .LineBeforeAAfterSstaer {
     width: 100px;
     height: 3px;
     border: 2px solid white;
     background-color: white;
+    transition: 1s;
+
 }
-.MainStarAndLinesDiv:hover .LineBeforeAAfterSstaer {
-    width: 200px;
-    transition: 2s;
-}
+
 .MainHomeHDivLast {
     font-size: 1.5rem;
     line-height: 3.5rem;
@@ -65,4 +65,10 @@ body {
 }
 #Portfolio {
     height: 300vh;
+}
+.MainNAvIntoMainHome {
+    width: 100vw;
+    /* position: fixed !important; */
+    top: 0;
+    left: 0;
 }
