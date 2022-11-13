@@ -40,7 +40,7 @@ const Portfolio = ({section1InViewPlus, section2InViewPlus }) => {
              }}
             ></div>
         </div>
-             <div>
+             <div className='ImgsPortMapMainDiv'>
              {cards.slice(0, 6).map((cards)=> 
               <img className='ImgsPortMap' src={cards.photo} />
              

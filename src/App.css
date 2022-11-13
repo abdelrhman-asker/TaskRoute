@@ -99,6 +99,12 @@ body {
     width: 38px;
     position: relative;
 }
+.ImgsPortMapMainDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .ImgsPortMap{
     max-width: 300px;
     max-height: 300px;
