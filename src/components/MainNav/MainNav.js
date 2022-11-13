@@ -10,7 +10,7 @@ import { useInView } from "react-intersection-observer";
 import { AiOutlineMenu } from 'react-icons/ai';
 
 
-function MainNav({section1InView, section2InView }) {
+function MainNav({section1InView, section2InView ,section1InViewPlus, section2InViewPlus }) {
  
    
 
@@ -38,9 +38,21 @@ function MainNav({section1InView, section2InView }) {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto ml-0">
 
-            <HashLink      
-
-            className='HashLink'  to="/#Portfolio">
+            <HashLink className='HashLink'  to="/#Portfolio"
+             style={{
+              color: section1InViewPlus
+              ? ""
+              : section2InViewPlus
+              ? ""
+              : "white",
+                backgroundColor: section1InViewPlus
+                ? "transparent"
+                : section2InViewPlus
+                ? "#1abc9c"
+                : "#1abc9c",
+             }
+             }
+           >
                 PORTfOLIO</HashLink>
 
             <HashLink className='HashLink' to="/#">ABOUT</HashLink>

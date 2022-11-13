@@ -44,7 +44,8 @@ body {
 .HashLink {
     font-weight: 700;
     font-size: 1rem !important;
-    padding: 0 !important;
+    padding: 10px !important;
+    border-radius: 15px;
 }
 .MainNavbarsec .ms-auto {
     margin-right: 50px;
@@ -87,7 +88,7 @@ body {
   
     }
   }
-  @media screen and (min-width: 1px ) and (max-width: 768px ) {
+  @media screen and (min-width: 1px ) and (max-width: 767px ) {
     .navbar-expand-lg .navbar-collapse {
         margin-top: 20px;
         margin-left: 0px !important;
@@ -97,6 +98,5 @@ body {
     }
     .MainNavbarsec .ms-auto {
       margin-bottom: 20px;
-  
     }
   }

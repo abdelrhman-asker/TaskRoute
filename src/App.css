@@ -10,17 +10,19 @@ body {
 /* turn to first page button */
 .TiTopButton {
     position: fixed;
-    opacity: 0.7;
     font-size: 50px;
     bottom: 50px !important;
     right: 30px !important;
-    color: orange !important;
+    z-index: 5;
 }
 .TiTopButton a {
-    color: orange;
+    color: orange !important;
+    opacity: 0.7;
+
 }
-.TiTopButton:hover {
+.TiTopButton a:hover {
     opacity: 1;
+    
 }
 .MainHomeDiv {
     height: calc(100vh - 0vh);
@@ -63,12 +65,43 @@ body {
     line-height: 3.5rem;
     color: White;
 }
-#Portfolio {
-    height: 300vh;
-}
+
 .MainNAvIntoMainHome {
     width: 100vw;
     /* position: fixed !important; */
     top: 0;
     left: 0;
 }
+ /* Porfilio section styling */
+.MainDivPortfolio {
+    width: 100vw;
+    height: 300vh;
+    padding: 50px;
+    text-align: center;
+}
+
+.MainPortText {
+    font-size: clamp(2rem , 3.5rem , 4rem)  !important;
+    color: #2c3e50 !important;
+    font-weight: bold;
+}
+.LineBeforeAAfterSstaerPort {
+    width: 100px;
+    height: 3px;
+    border: 2px solid #2c3e50;
+    background-color: #2c3e50;
+    transition: 1s;
+
+}
+.StarSVgPort {
+    color: #2c3e50;
+    width: 38px;
+    position: relative;
+}
+/* All Media queries */
+@media screen and (min-width: 1px ) and (max-width: 512px ) {
+    .MainHomeHDivLast {
+        font-size: smaller;
+        transition: 2s;
+    }
+  }
