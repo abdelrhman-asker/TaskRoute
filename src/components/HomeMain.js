@@ -13,7 +13,7 @@ const HomeMain = ({section1InView, section2InView}) => {
             <div className='LineBeforeAAfterSstaer me-4'
             style={{
               width: section1InView
-              ? "150px"
+              ? "140px"
               : section2InView
               ? "100px"
               : "100px"
@@ -25,7 +25,7 @@ const HomeMain = ({section1InView, section2InView}) => {
             <div className='LineBeforeAAfterSstaer ms-4'
              style={{
               width: section1InView
-              ? "150px"
+              ? "140px"
               : section2InView
               ? "100px"
               : "100px"

@@ -3,6 +3,7 @@ import MainNav from './MainNav/MainNav'
 import Portfolio from './Portfolio'
 import { useInView } from "react-intersection-observer";
 import HomeMain from './HomeMain';
+import PopUps from './PopUps';
 
 const Home = () => {
     const [section1Ref, section1InView] = useInView({ threshold: 0.9 });
@@ -58,6 +59,7 @@ const Home = () => {
          </section>
         <section className="Section">
         section3</section></div>
+
 
     </div>
   )

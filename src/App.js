@@ -9,6 +9,7 @@ const App = () => {
     <BrowserRouter>
     <TiTopButton id={Home}  />
     <Routes>
+      <Route  path='*' element={<Home  />} />
       <Route  path='/' element={<Home  />} />
       <Route path='/Portfolio' element={<Portfolio />} />
     </Routes>

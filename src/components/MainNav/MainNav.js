@@ -43,7 +43,7 @@ function MainNav({section1InView, section2InView ,section1InViewPlus, section2In
               color: section1InViewPlus
               ? ""
               : section2InViewPlus
-              ? ""
+              ? "white"
               : "white",
                 backgroundColor: section1InViewPlus
                 ? "transparent"

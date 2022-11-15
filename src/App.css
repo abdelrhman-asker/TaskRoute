@@ -3,11 +3,11 @@
 }
 body {
     width: 100vw;
-    overflow-x: hidden;
+    overflow-x: hidden ;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 
 }
-/* turn to first page button */
+/*Start turn to first page button */
 .TiTopButton {
     position: fixed;
     font-size: 50px;
@@ -15,6 +15,8 @@ body {
     right: 30px !important;
     z-index: 5;
 }
+/*End turn to first page button */
+
 .TiTopButton a {
     color: orange !important;
     opacity: 0.7;
@@ -33,6 +35,9 @@ body {
     flex-direction: column;
     text-align: center;
     padding-top: 20vh;
+    /* position: absolute; */
+    width: 100vw;
+    
 }
 .MainHomeHDiv {
     font-size: 4rem;
@@ -72,13 +77,16 @@ body {
     top: 0;
     left: 0;
 }
+
  /* Porfilio section styling */
 .MainDivPortfolio {
     width: 100vw;
     overflow-x: hidden;
     min-height: 100vh;
-    padding: 50px;
+    /* padding: 110vh 0 0; */
     text-align: center;
+    
+    
 }
 
 .MainPortText {
@@ -100,21 +108,191 @@ body {
     position: relative;
 }
 .ImgsPortMapMainDiv {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+
+    
 }
 .ImgsPortMap{
     max-width: 300px;
-    max-height: 300px;
+    height: 220px;
     margin: 50px 30px -20px;
     border-radius: 15px;
 }
+.PlusSVgPort {
+    color: transparent ;
+    transition:  0.5s;
+    width: 25%;
+    height: 25%;
+}
+.PlusSVgPort:hover {
+    color: white ;
+}
+.PlusSVgPortMinDiv {
+    position: absolute;
+    width: 300px;
+    height: 220px;
+    margin: 50px 30px -20px;
+    border-radius: 15px;
+    top: 0%;
+    transition:  0.5s;
+
+}
+.PlusSVgPortMinDiv:hover {
+    background-color: rgba(26, 188, 156, 0.712);
+
+}
+.PlusSVgPortMinDiv:hover .PlusSVgPort {
+    color: white ;
+    opacity: 1 ;
+
+
+}
+.PlusSVgPortMinHash {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PopUps */
+.PopUps {
+    position: fixed;
+    z-index: 9 !important;
+    
+    top: 0vh;
+    left: 0vw;
+    right: 0vw;
+    width: 100vw;
+    height: 100vh !important;
+    background-color: rgba(176, 176, 176, 0.53);
+   flex-direction: column;
+   gap: 50px;
+    overflow-y: auto !important;
+}
+.popUpMainDiv {
+    position: absolute;
+    left: 15vw;
+    right: 15vw;
+    scrollbar-width: none;
+    width: 70%;
+    height: 100%;
+    padding: 200px 0 90px;
+    background-color: white;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column;
+    gap: 25px;
+    color: black;
+    border-radius: 35px;
+    overflow-y: auto !important;
+
+}
+.popUpMainDiv::-webkit-scrollbar {
+    display: none;
+  }
+.CardsTitlePopup {
+    font-size: clamp(0.5rem,2.5rem, 3rem);
+    max-width: 90% ;
+    color: black;
+    font-weight: bold;
+}
+.CardsPhotoMainPop {
+    border-radius: 25px;
+    margin-top: 25px;
+    width: 600px;
+    max-width: 90%;
+    height:400px;
+    text-align: center;
+}
+.LoremTextPopUp {
+    width: 90%;
+}
+.ButtCloseWind {
+    background-color: #1abc9c;
+}
+.ButtCloseWind:hover {
+    background-color: #1abc9c;
+}
+.GrFormCloseIco svg {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 45px;
+    background-color: #1abc9c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.GrFormCloseIco svg {
+    color: #1abc9c !important;
+    background-color: #1abc9c !important;
+}
+/* to close only */
+.PopUps1 {
+    width: 14vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.PopUps2 {
+    width: 14vw;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
 /* All Media queries */
+@media screen and (min-width: 512px ) and (max-width: 1051px ) {
+    .ImgsPortMapMainDiv {
+        grid-template-columns: auto auto ;
+    
+        
+    }
+    .CardsPhotoMainPop {
+        width: 400px;
+        height:300px;
+    }
+  }
+@media screen and (min-width: 1px ) and (max-width: 671px ) {
+    .ImgsPortMapMainDiv {
+        grid-template-columns: auto ;
+    
+        
+    }
+    .popUpMainDiv {
+        left: 2.5vw;
+        right: 2.5vw;
+        width: 95%;
+        padding-top: 70px;
+    
+    }
+    .PopUps1 {
+        width: 0.5vw;
+    }
+    .PopUps2 {
+        width: 0.5vw;
+    }
+  }
 @media screen and (min-width: 1px ) and (max-width: 512px ) {
     .MainHomeHDivLast {
         font-size: smaller;
         transition: 2s;
+    }
+    .CardsPhotoMainPop {
+        width: 300px;
+        height:200px;
     }
   }
