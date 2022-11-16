@@ -16,7 +16,6 @@ const Portfolio = ({section1InViewPlus, section2InViewPlus }) => {
 
 
   
-  const [isActive, setIsActive] = useState(false);
 
   // const handleClick = (event, key) => {
   //   setIsActive(current => !current);
@@ -26,9 +25,7 @@ const Portfolio = ({section1InViewPlus, section2InViewPlus }) => {
     
   // };
   
- const handleClick = () => {
-  document.getElementById(cards.HashId).style.display = "flex";
- }
+
 
   
   return (
@@ -44,8 +41,8 @@ const Portfolio = ({section1InViewPlus, section2InViewPlus }) => {
               width: section1InViewPlus
               ? "70px"
               : section2InViewPlus
-              ? "150px"
-              : "150px"
+              ? "120px"
+              : "70px"
              }}
             ></div>
             <div >
@@ -56,8 +53,8 @@ const Portfolio = ({section1InViewPlus, section2InViewPlus }) => {
               width: section1InViewPlus
               ? "70px"
               : section2InViewPlus
-              ? "150px"
-              : "150px"
+              ? "120px"
+              : "70px"
              }}
             ></div>
         </div>

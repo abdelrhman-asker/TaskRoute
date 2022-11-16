@@ -217,10 +217,10 @@ body {
     width: 90%;
 }
 .ButtCloseWind {
-    background-color: #1abc9c;
+    background-color: #1abc9c !important;
 }
 .ButtCloseWind:hover {
-    background-color: #1abc9c;
+    background-color: #1abc9c !important;
 }
 .GrFormCloseIco svg {
     position: absolute;
@@ -252,8 +252,186 @@ body {
     top: 0;
     bottom: 0;
 }
+#About {
+    /* height: 150vh; */
+    margin-top: 50px;
+
+}
+.AbouFChild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px !important;
+    background-color: #1abc9c;
+    padding: 150px 0;
+}
+.AboutMainText {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: bold;
+    
+}
+.LastAboutText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+    color: white;
+    font-size: 1.25rem;
+    
+}
+#Contact {
+    padding: 150px 0;
+}
+.MainContactChild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.MainContactText {
+    font-size: 3.5rem;
+    color: #2c3e50 !important;
+    font-weight: bold;
+}
+.MainFormDiv form {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    
+}
+.MainFormDiv form div {
+    width: 50vw !important;
+
+}
+.MainFormDiv form input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-size: clamp( 0.9rem,1.25rem, 1.25rem);
+}
+.MainFormDiv form textarea {
+    width: 100%;
+    height: 150px;
+    border: none;
+    font-size: clamp( 0.9rem,1.25rem, 1.25rem);
+
+}
+.MainFormDiv form input:focus {
+    border: none;
+    outline: none;
+}
+.MainFormDiv form textarea:focus {
+    border: none;
+    outline: none;
+
+}
+.MainFormDiv form hr {
+
+    background-color: rgba(255, 255, 255, 0) !important;
+    width: 100%;
+}
+.MainFormDiv form ::placeholder {
+    font-size: 1.5rem;
+}
+.MainFormDiv form button {
+    background-color: #1abc9c;
+    border: none;
+    color: white;
+    width: 110px;
+    height: 60px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    transition: 1s;
+}
+.MainFormDiv form button:hover {
+    background-color: #106a58;
+    
+}
+.smallPop {
+    color: #1abc9c;
+    transition: 1s ;
 
 
+}
+
+#Footer {
+    height: fit-content;
+}
+.MainChildDivFooter {
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.AboveSecFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 70px;
+    align-items: center;
+    text-align: center;
+    padding: 130px 0 100px;
+}
+.EachDivInRow {
+    width: calc(100%/3);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.AllSvgDivMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.AboveSecFooter svg {
+    font-size: 20px;
+    width: 20px;
+    /* border: 1px solid white; */
+    border-radius: 50%;
+}
+.eachsvgdiv:hover svg {
+    color: #2c3e50;
+}
+.eachsvgdiv:hover {
+    background-color: white;
+}
+.eachsvgdiv {
+    width: fit-content;
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 15px; */
+    font-size: 15px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+}
+.LastEver {
+    background-color: #0f1e2c;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+}
+.LastEver h4 {
+    font-size: 1rem;
+    color: white;
+
+}
 /* All Media queries */
 @media screen and (min-width: 512px ) and (max-width: 1051px ) {
     .ImgsPortMapMainDiv {
@@ -265,6 +443,7 @@ body {
         width: 400px;
         height:300px;
     }
+    
   }
 @media screen and (min-width: 1px ) and (max-width: 671px ) {
     .ImgsPortMapMainDiv {
@@ -285,6 +464,20 @@ body {
     .PopUps2 {
         width: 0.5vw;
     }
+    .LastAboutText {
+       
+        width: 75%;
+        flex-wrap: wrap;
+        
+    }.MainFormDiv form div {
+        width: 80vw !important;
+    }
+    .AboveSecFooter {
+        flex-direction: column;
+    }
+    .EachDivInRow {
+        width: 80%;
+    }
   }
 @media screen and (min-width: 1px ) and (max-width: 512px ) {
     .MainHomeHDivLast {
@@ -294,5 +487,8 @@ body {
     .CardsPhotoMainPop {
         width: 300px;
         height:200px;
+    }
+    .MainContactText {
+        font-size: 2.7rem;
     }
   }

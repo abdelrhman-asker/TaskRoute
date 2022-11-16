@@ -26,8 +26,8 @@ const PopUps = ({id, cards, section1InViewPlus, section2InViewPlus}) => {
               width: section1InViewPlus
               ? "70px"
               : section2InViewPlus
-              ? "150px"
-              : "150px"
+              ? "130px"
+              : "130px"
              }}
             ></div>
             <div >
@@ -38,8 +38,8 @@ const PopUps = ({id, cards, section1InViewPlus, section2InViewPlus}) => {
               width: section1InViewPlus
               ? "70px"
               : section2InViewPlus
-              ? "150px"
-              : "150px"
+              ? "130px"
+              : "130px"
              }}
             ></div>
         </div>

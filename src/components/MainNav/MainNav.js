@@ -10,7 +10,7 @@ import { useInView } from "react-intersection-observer";
 import { AiOutlineMenu } from 'react-icons/ai';
 
 
-function MainNav({section1InView, section2InView ,section1InViewPlus, section2InViewPlus }) {
+function MainNav({section1InView, section2InView ,section1InViewPlus, section2InViewPlus, section3InViewPlus,  section4InViewPlus}) {
  
    
 
@@ -44,19 +44,70 @@ function MainNav({section1InView, section2InView ,section1InViewPlus, section2In
               ? ""
               : section2InViewPlus
               ? "white"
-              : "white",
-                backgroundColor: section1InViewPlus
-                ? "transparent"
-                : section2InViewPlus
-                ? "#1abc9c"
-                : "#1abc9c",
+              : section3InViewPlus
+              ? ""
+              : "",
+              backgroundColor
+              : section1InViewPlus
+              ? "transparent"
+              : section2InViewPlus
+              ? "#1abc9c"
+              : section3InViewPlus
+              ? "transparent"
+              :"transparent"
              }
              }
            >
                 PORTfOLIO</HashLink>
 
-            <HashLink className='HashLink' to="/#">ABOUT</HashLink>
-            <HashLink className='HashLink' to="/#">CONTACT</HashLink>
+            <HashLink className='HashLink' to="/#About"
+            style={{
+              color: section1InViewPlus
+              ? ""
+              : section2InViewPlus
+              ? ""
+              : section3InViewPlus
+              ? "white"
+              : "",
+                backgroundColor
+                : section1InViewPlus
+                ? "transparent"
+                : section2InViewPlus
+                ? "transparent"
+                : section3InViewPlus
+                ? "#1abc9c"
+                :"transparent"
+             }
+             }>ABOUT</HashLink>
+
+
+
+
+            <HashLink className='HashLink' to="/#Contact"
+            style={{
+              color: section1InViewPlus
+              ? ""
+              : section2InViewPlus
+              ? ""
+              : section3InViewPlus
+              ? ""
+              : section4InViewPlus
+              ? "white"
+              : "",
+                backgroundColor
+                : section1InViewPlus
+                ? "transparent"
+                : section2InViewPlus
+                ? "transparent"
+                : section3InViewPlus
+                ? "transparent"
+                : section4InViewPlus
+                ? "#1abc9c"
+                :"transparent"
+             }
+             }
+            
+            >CONTACT</HashLink>
             
            
           </Nav>
