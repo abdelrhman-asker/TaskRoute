@@ -71,7 +71,7 @@ const Contact = ({section1InViewPlus, section2InViewPlus , section3InViewPlus , 
             <div >
             {name.length > 0 ? <div className='smallPop'> Name </div> : ""}
 
-                    <input
+                    <input required
                      onChange={(e) => setName(e.target.value)}
                      value={name}
                       type="text" name="name" placeholder="Name" />
@@ -83,7 +83,7 @@ const Contact = ({section1InViewPlus, section2InViewPlus , section3InViewPlus , 
             <div >
             {email.length > 0 ? <div className='smallPop'> Email </div> : ""}
 
-                    <input
+                    <input required
                     onChange={(e) => setEmail(e.target.value)}
                     value={email} type="text" name="email" placeholder="Email Address" />
                                    <hr />
@@ -93,7 +93,7 @@ const Contact = ({section1InViewPlus, section2InViewPlus , section3InViewPlus , 
             <div >
             {number.length > 0 ? <div className='smallPop'> Number </div> : ""}
 
-                    <input
+                    <input required
                     onChange={(e) => setNumber(e.target.value)}
                     value={number}
                     type="tel" name="number" placeholder="Phone Number" />
@@ -104,7 +104,7 @@ const Contact = ({section1InViewPlus, section2InViewPlus , section3InViewPlus , 
             <div >
             {mass.length > 0 ? <div className='smallPop'> Massage </div> : ""}
 
-            <textarea
+            <textarea required
             onChange={(e) => setMass(e.target.value)}
             value={mass}
             name="message" placeholder="Message"></textarea>
