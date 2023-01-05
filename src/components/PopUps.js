@@ -3,7 +3,7 @@ import React from 'react'
 import { GrFormClose } from 'react-icons/gr';
 
 const PopUps = ({id, cards, section1InViewPlus, section2InViewPlus}) => {
-  console.log(cards)
+  // console.log(cards)
   return (
     <div className='popUpMainDiv' id={id} >
         <div style={{cursor:"pointer"}} onClick={() => 
