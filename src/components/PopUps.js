@@ -47,7 +47,7 @@ const PopUps = ({id, cards, section1InViewPlus, section2InViewPlus}) => {
        
         
              <div >
-                <img className='CardsPhotoMainPop' src={cards.photo} />
+                <img className='CardsPhotoMainPop' alt='CardMainPop' src={cards.photo} />
 
 
              </div>

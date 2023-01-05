@@ -62,7 +62,7 @@ const Portfolio = ({section1InViewPlus, section2InViewPlus }) => {
              {cards.slice(0, 6).map((cards,evetar, key)=> 
               <div key={cards.id} style={{position:"relative"}}>
                 <div >
-              <img className='ImgsPortMap' src={cards.photo} />
+              <img className='ImgsPortMap' alt="ImgsPortMap" src={cards.photo} />
               </div>
               
               <div  onClick={() => 
